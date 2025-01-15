@@ -1,0 +1,17 @@
+.container {
+    text-align: center;
+  }
+
+  .aside {
+    display: inline-block;
+  }
+
+  .box1 {
+    background-color: #fbfbfb;
+    width: 100%;
+  }
+
+  .box {
+    display: inline-block;
+  }
+
