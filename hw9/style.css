@@ -1,0 +1,68 @@
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+    /* background-color: #5e5e5e; */
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-one {
+    display: flex;
+    gap: 30px;
+  }
+
+  .nav-two {
+    gap: 10px;
+  }
+
+  .box-first {
+  }
+
+  .box-second {
+  }
+
+  .box {
+    position: relative;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link {
+    color: #3d3d3d;
+  }
+
+  .link:hover {
+    color: #46a358;
+  }
+
+  .card-title {
+    color: #3d3d3d;
+  }
+
+  .card-price {
+    color: #46a358;
+  }
+
+  .icon-list {
+    display: flex;
+    position: absolute;
+    left: 30px;
+    top: 260px;
+  }
+
+  .icon-item {
+    padding: 10px;
+  }
+
+  .picture {
+    position: absolute;
+    left: 4px;
+    top: 25px;
+  }
