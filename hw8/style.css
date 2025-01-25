@@ -7,6 +7,9 @@
       } */
       body {
         color: #727272;
+        font-family: 'Cera Pro', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
       }
 
       .container {
@@ -24,6 +27,10 @@
         display: flex;
         align-items: center;
         column-gap: 5px;
+      }
+
+      .button span {
+        text-transform: capitalize;
       }
 
       .box-first {
@@ -68,21 +75,25 @@
 
       .text-size-one {
         color: #3d3d3d;
+        text-transform: uppercase;
         /* font-size: 18px; */
       }
 
       .text-size-two {
         color: #3d3d3d;
+        text-transform: capitalize;
         /* font-size: 16px; */
       }
 
       .text-size-three {
         color: #3d3d3d;
+        text-transform: capitalize;
         /* font-size: 20px; */
       }
 
       .text-size-four {
         color: #3d3d3d;
+        text-transform: capitalize;
       }
 
       .text-size-four:hover {
@@ -91,5 +102,4 @@
 
       .text-green {
         color: #46a358;
-        font-size: 14px;
       }

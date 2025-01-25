@@ -1,5 +1,6 @@
 body {
   color: #3d3d3d;
+  font-family: 'Cera Pro', sans-serif;
 }
 .central-wrapper {
 }
@@ -55,10 +56,12 @@ body {
 
 .link {
   color: #3d3d3d;
+  text-decoration: none;
 }
 
 .link:hover {
   color: #46a358;
+  text-decoration: underline;
 }
 
 .button-number {
