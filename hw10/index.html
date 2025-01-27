@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <a href="/">
+            <img src="./img/logo-greenshop.svg" alt="Логотип Greenshop" />
+          </a>
+          <ul class="link-title">
+            <li class="link-item"><a class="link" href="#">Home</a></li>
+            <li class="link-item"><a class="link" href="#">Shop</a></li>
+            <li class="link-item">
+              <a class="link" href="#">Plant Care</a>
+              <ul class="inner-link-title">
+                <li class="link-item">
+                  <a class="inner-link" href="#">Drainage</a>
+                </li>
+                <li class="link-item">
+                  <a class="inner-link" href="#">Fungicides</a>
+                </li>
+                <li class="link-item">
+                  <a class="inner-link" href="#">Fertilizer</a>
+                </li>
+                <li class="link-item">
+                  <a class="inner-link" href="#">Priming</a>
+                </li>
+              </ul>
+            </li>
+            <li class="link-item"><a class="link" href="#">Blogs</a></li>
+          </ul>
+
+          <!-- <ul class="icon-list">
+            <li class="icon-item-left">
+              <img src="./img/vector-left.svg" alt="Vector-left" />
+            </li>
+            <li class="icon-item-right">
+              <img src="./img/vector-right.svg" alt="Vector-right" />
+            </li>
+          </ul> -->
+
+          <button class="button" type="button">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.1601 10.1006H8.12598"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.7212 7.67059L18.1612 10.1006L15.7212 12.5306"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.6342 6.35826C13.3592 3.37493 12.2425 2.2916 7.80082 2.2916C1.88332 2.2916 1.88332 4.2166 1.88332 9.99993C1.88332 15.7833 1.88332 17.7083 7.80082 17.7083C12.2425 17.7083 13.3592 16.6249 13.6342 13.6416"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Login</span>
+          </button>
+        </nav>
+      </header>
+      <main>
+        <section class="hero-section">
+          <div class="hero-box">
+            <p class="text-title-top">Welcome to GreenShop</p>
+            <h1 class="hero-title">
+              Let’s Make a Better <span class="accent">Planet</span>
+            </h1>
+            <p class="text-title-bottom">
+              We are an online plant shop offering a wide range of cheap and
+              trendy plants. Use our plants to create an unique Urban Jungle.
+              Order your favorite plants!
+            </p>
+            <button class="button-title" type="button">SHOP NOW</button>
+          </div>
+          <div class="box-logo">
+            <img class="logo-two" src="./img/logo-two.svg" alt="Logo small" />
+            <img class="logo-one" src="./img/logo-one.svg" alt="Logo big" />
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <style>
+      /* Base */
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        color: #3d3d3d;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Cera Pro", sans-serif;
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin-top: 0;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      header {
+        border-bottom: 0.3px solid #46a35880;
+      }
+
+      nav {
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .hero-section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #f5f5f580;
+      }
+
+      /* Button */
+      .button {
+        color: #ffffff;
+        background-color: #46a358;
+        border: 0;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 7px 17px;
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+      }
+
+      .button-title {
+        color: #ffffff;
+        background-color: #46a358;
+        border: 0;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 11px 27px 9px 26px;
+      }
+
+      /* Link */
+      .link-title {
+        display: flex;
+      }
+
+      .inner-link-title {
+        display: none;
+        position: absolute;
+        background-color: #edf6ee;
+        /* top: 37px; */
+      }
+
+      .link-item {
+        position: relative;
+      }
+
+      .link-item:hover .inner-link-title {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .link {
+        display: block;
+        text-decoration: none;
+        color: #3d3d3d;
+        font-size: 16px;
+        padding-right: 50px;
+      }
+
+      .link:hover {
+        font-size: 16px;
+        font-weight: 700;
+        /* border-bottom: 3px solid #46a358; */
+      }
+
+      .inner-link {
+        display: block;
+        text-decoration: none;
+        color: #3d3d3d;
+        font-size: 16px;
+        padding: 7px 104px 8px 14px;
+      }
+
+      .inner-link:hover {
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      /* Text */
+      .hero-box {
+        padding: 24px;
+      }
+
+      .hero-title {
+        margin-bottom: 5px;
+        font-size: 70px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .text-title-top {
+        margin-bottom: 7px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      .text-title-bottom {
+        margin-bottom: 44px;
+        color: #727272;
+      }
+
+      .accent {
+        color: #46a358;
+      }
+
+      /* Vector */
+      .icon-list {
+        display: flex;
+        position: absolute;
+        /* top: 33px; */
+        right: 309px;
+        gap: 30px;
+      }
+
+      /* .box-logo {
+        position: relative;
+        left: 300px;
+      } */
+
+      .logo-two {
+        position: absolute;
+        right: 500px;
+        top: 357px;
+      }
+    </style>
+  </body>
+</html>
