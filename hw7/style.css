@@ -76,3 +76,8 @@ body {
   color: #ffffff;
   background-color: #46a358;
 }
+
+.cards {
+  width: 100%;
+  max-width: 840px;
+}
