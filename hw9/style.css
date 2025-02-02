@@ -1,84 +1,112 @@
+body {
+  font-family: "Cera Pro", sans-serif;
+  font-weight: 400;
+  color: #3d3d3d;
+}
+
 .container {
-    max-width: 840px;
-    margin: 0 auto;
-    font-family: 'Cera Pro', sans-serif;
-    font-weight: 400;
-    line-height: 1;
-    /* background-color: #5e5e5e; */
-  }
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+}
 
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+/* Box first */
+.box-first {
+  margin-bottom: 31px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .nav-one {
-    display: flex;
-    gap: 30px;
-  }
+.nav-one {
+  display: flex;
+  gap: 38px;
+}
 
-  .nav-two {
-    gap: 10px;
-    font-size: 15px;
-  }
+.link {
+  color: #3d3d3d;
+  font-size: 15px;
+  text-decoration: none;
+}
 
-  .box-first {
-  }
+.link:hover {
+  font-size: 15px;
+  font-weight: 700;
+  color: #46a358;
+  text-decoration: underline;
+}
 
-  .box-second {
-  }
+.nav-two {
+  font-size: 15px;
+  display: flex;
+  gap: 8px;
+}
 
-  .box {
-    position: relative;
-    border-top: 1px solid #46A358;
-    margin-right: 33px;
-  }
+/* Box second */
+.box-second {
+}
 
-  .cards {
-    display: flex;
-    justify-content: space-between;
-  }
+.box-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  gap: 33px;
+}
 
-  .link {
-    color: #3d3d3d;
-    text-decoration: none;
-    font-size: 15px;
-  }
+.card-img {
+  position: relative;
+  border-top: 1px solid #46a358;
+}
 
-  .link:hover {
-    color: #46a358;
-    text-decoration: underline;
-    font-size: 15px;
-    font-weight: 700;
-  }
+.img-background {
+  margin-bottom: 12px;
+}
 
-  .card-content {
-    
-  }
+.img-plant {
+  position: absolute;
+  padding: 25px 4px;
+  left: 0;
+}
 
-  .card-title {
-    color: #3d3d3d;
-    font-size: 16px;
-  }
+.card-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
 
-  .card-price {
-    color: #46a358;
-    font-size: 18px;
-    font-weight: 700;
-  }
+.card-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #46a358;
+}
 
-  .icon-list {
-    display: flex;
-    position: absolute;
-    left: 30px;
-    top: 260px;
-  }
+.sale {
+  display: flex;
+  gap: 16px;
+}
 
-  .icon-item {
-    padding: 10px;
-  }
+.card-price-sale {
+  font-size: 18px;
+  font-weight: 400;
+  color: #cbcbcb;
+  text-decoration: line-through;
+}
 
+/* Icon */
+.icon-list {
+  position: absolute;
+  display: flex;
+  bottom: 19px;
+  left: 67px;
+  gap: 26px;
+}
 
+.icon-frame {
+  position: absolute;
+  top: 14px;
+}
 
  
