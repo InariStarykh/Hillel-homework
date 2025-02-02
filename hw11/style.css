@@ -31,10 +31,33 @@ body {
     margin-bottom: 15px;
   }
 
+  .top-list-item {
+    position: relative;
+  }
+
   .list-item-title {
     font-style: 17px;
     font-weight: 700;
     margin-bottom: 9px;
+  }
+
+  .border::before,
+  .border::after {
+    display: block;
+    height: 187px;
+    border-right: 1px solid #46A3581A;
+    content: '';
+  }
+
+  .border::before {
+   position: absolute;
+   left: -30px;
+  }
+
+  .border::after {
+    position: absolute;
+    right: -30px;
+    top: 0;
   }
 
   .list-item-text {
