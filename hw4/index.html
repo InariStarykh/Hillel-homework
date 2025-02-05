@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <style>
+      /* Modal */
+      .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      /* 
+.backdrop.is-hidden {
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+} */
+
+      .modal {
+        position: relative;
+        width: 500px;
+        height: 655px;
+        background-color: #ffffff;
+      }
+
+      .modal-btn-close {
+        position: absolute;
+        top: 13px;
+        right: 13px;
+      }
+    </style>
+  </body>
+</html>

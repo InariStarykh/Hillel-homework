@@ -43,7 +43,7 @@ body {
 
   .border::before,
   .border::after {
-   position: absolute;
+    position: absolute;
     height: 187px;
     border-right: 1px solid #46A3581A;
     content: '';
