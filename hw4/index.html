@@ -3,48 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./reset.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <div class="form-title">
+          <a class="title border" href="#">Login</a>
+          <a class="title" href="#">Register</a>
+        </div>
+        <p class="text-top">Enter your email and password to register.</p>
+
+        <div class="form-field">
+          <label class="form-label" for="user-name">Username</label>
+          <input
+            class="form-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Username"
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="user-email"
+            >Enter your email address</label
+          >
+          <input
+            class="form-input"
+            type="email"
+            name="user-email"
+            id="user-email"
+            placeholder="Enter your email address"
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="user-password">Password</label>
+          <input
+            class="form-input"
+            type="password"
+            name="user-password"
+            id="user-password"
+            placeholder="Password"
+          />
+
+          <div class="form-icon">
+            <img src="./img/hide.svg" alt="hide" />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="user-confirm-password"
+            >Confirm Password</label
+          >
+          <input
+            class="form-input"
+            type="password"
+            name="user-confirm-password"
+            id="user-confirm-password"
+            placeholder="Confirm Password"
+          />
+          <div class="form-icon">
+            <img src="./img/hide.svg" alt="hide" />
+          </div>
+        </div>
+
+        <button class="form-button button" type="submit">Register</button>
+
+        <p class="text">Or register with</p>
+
+        <div class="form-social">
+          <div>
+            <img class="img-google" src="./img/form-google.svg" alt="Google" />
+          </div>
+          <a class="form-google" href="#">Continue with Google</a>
+        </div>
+
+        <div class="form-social">
+          <div>
+            <img
+              class="img-facebook"
+              src="./img/form-facebook.svg"
+              alt="Facebook"
+            />
+          </div>
+          <a class="form-facebook" href="#">Continue with Facebook</a>
+        </div>
       </div>
     </div>
-
-    <style>
-      /* Modal */
-      .backdrop {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      /* 
-.backdrop.is-hidden {
-   opacity: 0;
-   visibility: hidden;
-   pointer-events: none;
-} */
-
-      .modal {
-        position: relative;
-        width: 500px;
-        height: 655px;
-        background-color: #ffffff;
-      }
-
-      .modal-btn-close {
-        position: absolute;
-        top: 13px;
-        right: 13px;
-      }
-    </style>
   </body>
 </html>
